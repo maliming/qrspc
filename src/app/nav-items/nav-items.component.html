@@ -1,0 +1,6 @@
+<!-- nav-items.component.html -->
+<ul class="navbar-nav">
+  <li *ngIf="currentUser$ | async as user">
+    <span>{{ user.userName }}</span>
+  </li>
+</ul>
